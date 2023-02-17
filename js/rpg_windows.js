@@ -2854,7 +2854,32 @@ Window_SavefileList.prototype.drawContents = function(info, rect, valid) {
 
 Window_SavefileList.prototype.drawGameTitle = function(info, x, y, width) {
     if (info.title) {
-        this.drawText(info.title, x, y, width);
+        //this.drawText(info.title, x, y, width);
+		if(info.hard == 0){
+			this.drawText('NORMAL', x, y, 100);
+		}else{
+			this.drawText('HARD', x, y, 100);
+		}
+		var str = info.keikanissu + '日目　';
+		if(info.youbi == 0){
+            str += '月曜　';
+        }else if(info.youbi == 1){
+            str += '火曜　';
+        }else if(info.youbi == 2){
+            str += '水曜　';
+        }else if(info.youbi == 3){
+            str += '木曜　';
+        }else if(info.youbi == 4){
+            str += '金曜　';
+        }else if(info.youbi == 5){
+            str += '土曜　';
+        }else if(info.youbi == 6){
+            str += '日曜　';
+        }
+
+        str += info.jikan + '時　' + info.katagaki;
+
+		this.drawText(str, x, y + 50, width);
     }
 };
 

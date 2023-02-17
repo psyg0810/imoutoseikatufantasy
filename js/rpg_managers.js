@@ -424,6 +424,11 @@ DataManager.makeSavefileInfo = function() {
     info.faces      = $gameParty.facesForSavefile();
     info.playtime   = $gameSystem.playtimeText();
     info.timestamp  = Date.now();
+	info.katagaki  = $gameVariables.value(519);
+	info.hard  = $gameVariables.value(216);
+	info.keikanissu  = $gameVariables.value(160);
+	info.youbi  = $gameVariables.value(6);
+	info.jikan  = $gameVariables.value(4);
     return info;
 };
 
