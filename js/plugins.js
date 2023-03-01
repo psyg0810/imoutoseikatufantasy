@@ -23,5 +23,6 @@ var $plugins =
 {"name":"Mano_GamepadABswap","status":true,"description":"ゲームパッドのAとBを入れ替えます。","parameters":{}},
 {"name":"banner","status":false,"description":"HBOX.JPバナー表示","parameters":{"contentId":"450801","bnrWindowX":"5","bnrWindowY":"30","bnrWindowWdith":"320","bnrWindowHeight":"115","ImageFile":"banner_icon","fontsize":"18","OffsetX":"145","OffsetY":"55","ScaleX":"600","ScaleY":"220","BackImageFile":"black_"}},
 {"name":"ServerSave","status":false,"description":"セーブデータサーバー保存","parameters":{"contentId":"450801"}},
-{"name":"EmptyVal","status":true,"description":"ver1.00 ゲーム変数に空の文字列を代入・表示できます。","parameters":{}}
+{"name":"EmptyVal","status":true,"description":"ver1.00 ゲーム変数に空の文字列を代入・表示できます。","parameters":{}},
+{"name":"EventDebugger","status":true,"description":"イベントデバッグプラグイン","parameters":{"ステップ開始":"F7","ステップイン":"F11","ステップオーバー":"F10","続行":"F6","表示切替":"F6","変数監視":"F1","監視最大数":"3","イベントテスト":"true","機能キー抑制":"false","OK動作":"F11","キャンセル動作":"F6","Ctrl同時押し":"false","Alt同時押し":"false","スクリプトデバッグ":"1","CTRLで無効化":"false"}}
 ];
